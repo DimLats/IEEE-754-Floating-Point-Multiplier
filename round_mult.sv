@@ -1,5 +1,4 @@
 // Define package containing the enum type 
-
 package round_pkg;
 
 // Define enum type for "round" function   
@@ -9,7 +8,7 @@ endpackage
 
 import round_pkg::*;
 
-module round_mult(input logic [23:0] mantissa, input logic signed [9:0] norm_exponent, input round rnd , input logic guard, sticky, sign, output logic [24:0] post_round_mantissa, output logic signed [9:0] post_round_exponent, output logic inexact);
+module round_mult(input logic [23:0] mantissa, input logic signed [9:0] norm_exponent, input round rnd, input logic guard, sticky, sign, output logic [24:0] post_round_mantissa, output logic signed [9:0] post_round_exponent, output logic inexact);
 
 always_comb begin
 
